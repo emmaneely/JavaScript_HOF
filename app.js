@@ -57,6 +57,14 @@ console.log(userNamesScores);
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");
 
+// const activeUsers = users.filter(function(user) {
+//     if (user.isActive == true) {
+//         return true;
+//     }
+// });
+const activeUsers = users.filter(user => user.isActive == true);
+console.log(activeUsers);
+
 // Exercise 5 Section
 console.log("EXERCISE 5:\n==========\n");
 

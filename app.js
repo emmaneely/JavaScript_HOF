@@ -41,13 +41,19 @@ let users = [
     },
 ];
 
-/* users.forEach(function(name) {
-    console.log(name);
-}); */
-users.forEach(name => console.log(name));
+// users.forEach(function(user) {
+//     console.log(user.name);
+// });
+users.forEach(user => console.log(user.name));
 
 // Exercise 3 Section
 console.log("EXERCISE 3:\n==========\n");
+
+const userNamesScores = users.map(function(user) {
+    return {name: user.name, score: user.score};
+});
+
+console.log(userNamesScores);
 
 // Exercise 4 Section
 console.log("EXERCISE 4:\n==========\n");

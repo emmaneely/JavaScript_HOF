@@ -68,5 +68,15 @@ console.log(activeUsers);
 // Exercise 5 Section
 console.log("EXERCISE 5:\n==========\n");
 
+// const sortedScores = users.sort(function(a, b) {
+//     if (a.score < b.score) {
+//         return 1;
+//     } else {
+//         return -1;
+//     }
+// });
+const sortedScores = users.sort((a, b) => (a.score < b.score ? 1 : -1));
+console.log(sortedScores);
+
 // Exercise 6 Section
 console.log("EXERCISE 6:\n==========\n");

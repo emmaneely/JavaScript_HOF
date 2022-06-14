@@ -80,3 +80,9 @@ console.log(sortedScores);
 
 // Exercise 6 Section
 console.log("EXERCISE 6:\n==========\n");
+
+// const scoresAvg = users.reduce(function(sum, user) {
+//     return sum + user.score / users.length;
+// }, 0);
+const scoresAvg = users.reduce((sum, user) => sum + user.score / users.length, 0);
+console.log(scoresAvg);
